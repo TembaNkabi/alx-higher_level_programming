@@ -1,13 +1,5 @@
-#!/usr/bin/python3
-import sys
+g!/usr/bin/python3
 
-
-def safe_print_integer_err(value):
-    try:
-        print("{:d}".format(value))
-    except (ValueError, TypeError) as err:
-        print("Exception: {}".format(err), file=sys.stderr)
-        return False
-    else:
-        return True
-
+def raise_exception_msg(message=""):
+    """Raise a NameError exception with a message."""
+    raise NameError(message)
